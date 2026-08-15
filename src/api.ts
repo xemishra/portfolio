@@ -1,6 +1,6 @@
 export const API_URL = import.meta.env.VITE_API_URL ?? "https://xemishra.xyz";
 
-export type VoteItemType = "blog" | "guestbook" | "gallery" | "descussion" | "value";
+export type VoteItemType = "blog" | "guestbook" | "gallery" | "discussion" | "value";
 
 export type VoteSummary = {
     upvotes: number;
@@ -353,8 +353,8 @@ export async function deleteDiscussionTopic(id: string): Promise<void> {
 
 export async function getDiscussionMessages(
     topicId: string,
-    skip: 0,
-    limit: 30
+    skip = 0,
+    limit = 30
 ): Promise<DiscussionMessagePage> {
     return handle(
         await fetch(`${API_URL}/api/discussion/${topicId}/messages?skip=${skip}&limit=${limit}`)
