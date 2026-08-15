@@ -1,6 +1,7 @@
 import { getValues, ValueItem } from "../api";
 import Markdown from "../components/Markdown";
 import Seo from "../components/Seo";
+import VoteButtons from "../components/VoteButtons";
 import { useInfiniteList } from "../hooks/useInfiniteList";
 
 export default function ValuesPage() {
@@ -60,6 +61,7 @@ export function ValueCard({ value }: { value: ValueItem }) {
                         day: "numeric",
                     })}
                 </small>
+                <VoteButtons itemType="value" itemId={value.id} votes={value.votes} />
             </div>
         </article>
     )
