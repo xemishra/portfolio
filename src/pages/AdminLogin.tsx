@@ -27,7 +27,7 @@ export default function AdminLogin() {
     return (
         <main className="admin-page">
             <form className="admin-login" onSubmit={submit}>
-                <h1>xemishra</h1>
+                <h1>Admin login</h1>
                 <p className="muted">Sign in to manage blog posts and projects.</p>
                 <label>
                     Username
