@@ -3,7 +3,7 @@
 > Open-source frontend of my personal portfolio, built with React, TypeScript, and Vite.
 
 > [!NOTE]
-> This repository is primarily for my personal portfolio and developemnt. It is public and released under the **MIT License**.
+> This repository is primarily for my personal portfolio and developement. It is public and released under the **MIT License**.
 >
 > You are free to **use, copy, modify, adapt, and reuse** the components or code from this repository in your own projects, subject to the terms of the MIT License.
 >
