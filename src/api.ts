@@ -1,4 +1,4 @@
-export const API_URL = import.meta.env.VITE_API_URL ?? "https://xemishra.xyz";
+export const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
 export type VoteItemType = "blog" | "guestbook" | "gallery" | "discussion" | "value";
 

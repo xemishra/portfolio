@@ -1,5 +1,6 @@
-import { Link, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom"
 
 export default function Nav() {
     const [menu, setMenu] = useState(false);
@@ -17,8 +18,8 @@ export default function Nav() {
         document.addEventListener('mousedown', handleOutside);
         document.addEventListener('touchstart', handleOutside);
         return () => {
-            document.addEventListener('mousedown', handleOutside);
-            document.addEventListener('touchstart', handleOutside);
+            document.removeEventListener('mousedown', handleOutside);
+            document.removeEventListener('touchstart', handleOutside);
         };
     }, [menu]);
 
@@ -46,7 +47,7 @@ export default function Nav() {
                 <Link to="/values" onClick={() => setMenu(false)}>
                     values
                 </Link>
-                <Link to="/discussion" onClick={() => setMenu(false)}>
+                <Link to="/discussions" onClick={() => setMenu(false)}>
                     discussion
                 </Link>
                 <Link to="/contributions" onClick={() => setMenu(false)}>

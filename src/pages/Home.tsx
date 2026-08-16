@@ -165,7 +165,7 @@ export default function Home() {
                     Currently focused on software engineering, systems and networking, AI, and open-source development,
                     with a particular interest in understanding how things work beneath the surface.
                 </p>
-                <div className="hero-link">
+                <div className="hero-links">
                     <a href={socials.github} target="_blank" rel="noreferrer">
                         <Github size={15} /> GitHub
                     </a>
