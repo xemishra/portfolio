@@ -4,7 +4,7 @@ type Page<T> = { items: T[]; total: number };
 
 export function useInfiniteList<T>(
     fetchPage: (skip: number, limit: number) => Promise<Page<T>>,
-    pageSize: 20,
+    pageSize = 20,
     deps: unknown[] = []
 ) {
     const [items, setItems] = useState<T[]>([]);
