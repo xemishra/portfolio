@@ -204,7 +204,7 @@ export async function getLatestBlogs(limit = 4): Promise<BlogListItem[]> {
 export async function getBlogs(q = "", skip = 0, limit = 20): Promise<BlogPage> {
     const params = new URLSearchParams({ skip: String(skip), limit: String(limit) });
     if (q) params.set("q", q);
-    return handle(await fetch(`${API_URL}/api/blogs/${params.toString()}`, { credentials: "include" }));
+    return handle(await fetch(`${API_URL}/api/blogs?${params.toString()}`, { credentials: "include" }));
 }
 
 export async function getBlog(slug: string): Promise<Blog> {
