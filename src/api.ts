@@ -357,7 +357,7 @@ export async function getDiscussionMessages(
     limit = 30
 ): Promise<DiscussionMessagePage> {
     return handle(
-        await fetch(`${API_URL}/api/discussion/${topicId}/messages?skip=${skip}&limit=${limit}`)
+        await fetch(`${API_URL}/api/discussions/${topicId}/messages?skip=${skip}&limit=${limit}`)
     );
 }
 
