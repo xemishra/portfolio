@@ -40,7 +40,7 @@ export default function DiscussionList() {
                 {!loading && !topics.length && <p className="muted">No discussion yet.</p>}
                 <div className="blog-list">
                     {topics.map((t) => (
-                        <Link className="blog-row" to={`/discussion/${t.slug}`} key={t.id} >
+                        <Link className="blog-row" to={`/discussions/${t.slug}`} key={t.id} >
                             <div className="blog-row-link">
                                 <div>
                                     <h3>{t.title}</h3>
