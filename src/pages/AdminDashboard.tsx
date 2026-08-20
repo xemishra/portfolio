@@ -337,7 +337,7 @@ export default function AdminDashboard() {
                 </button>
             </div>
 
-            <div className="admin-tab">
+            <div className="admin-tabs">
                 <button className={tab === "blogs" ? "active" : ""} onClick={() => setTab("blogs")}>
                     Blogs
                 </button>
