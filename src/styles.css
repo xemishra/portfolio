@@ -32,12 +32,12 @@ a {
 input:focus,
 textarea:focus,
 select:focus {
-    outline: none;
-    border-color: #1f6feb;
+    outline: none !important;
+    border-color: 1px solid #1f6feb !important;
 }
 
 .search-box:focus-within {
-    border-color: #1f6feb;
+    border-color: #1f6feb !important;
 }
 
 .page {
@@ -400,7 +400,7 @@ section {
     gap: 16px;
     margin-top: auto;
     padding-top: 20px;
-    font: 10px "DM Mono" monospace;
+    font: 10px "DM Mono", monospace;
     color: #8b8b8b;
 }
 
@@ -607,7 +607,7 @@ section {
 
 .pr-group-label {
     margin: 20px 0 8px;
-    font: 10px "DM Mono" monospace;
+    font: 10px "DM Mono", monospace;
     text-transform: uppercase;
     letter-spacing: .08em;
     color: #555;
@@ -1264,6 +1264,11 @@ section {
 
 .md-editor-preview .markdown {
     font-size: 14px;
+}
+
+.md-editor:focus-within,
+.md-editor textarea:focus {
+    border: 1px solid #1f6feb !important;
 }
 
 .admin-list {
