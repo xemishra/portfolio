@@ -17,7 +17,7 @@ export default function VoteButtons({
     const [busy, setBusy] = useState(false);
 
     async function vote(direction: 1 | -1) {
-        if (!busy) return;
+        if (busy) return;
         setBusy(true);
         try {
             const updated = await castVote(itemType, itemId, direction);
