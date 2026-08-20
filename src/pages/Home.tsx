@@ -117,7 +117,6 @@ export default function Home() {
         setGuestbookTotal((t) => t + 1);
     }
 
-    console.log("BLOGS STATE:", blogs);
 
     return (
         <main id="top">
