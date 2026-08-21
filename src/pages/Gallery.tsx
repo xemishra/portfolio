@@ -4,6 +4,7 @@ import { useInfiniteList } from "../hooks/useInfiniteList";
 import Seo from "../components/Seo";
 import VoteButtons from "../components/VoteButtons";
 import Lightbox from "../components/Lightbox";
+import GalleryVideo from "../components/GalleryVideo";
 
 export default function Gallery() {
     const { items, loading, loadingMore, hasMore, sentinelRef } = useInfiniteList<GalleryItem>(
@@ -56,7 +57,7 @@ export default function Gallery() {
                                     <img src={mediaUrl(item.media_url)} alt={item.caption || "Gallery photo"} loading="lazy" />
                                 </button>
                             ) : (
-                                <video src={mediaUrl(item.media_url)} controls preload="metadata" />
+                                <GalleryVideo src={mediaUrl(item.media_url)} />
                             )}
                             <figcaption>
                                 {item.caption && <p>{item.caption}</p>}

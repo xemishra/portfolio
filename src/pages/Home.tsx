@@ -28,6 +28,7 @@ import GuestbookComposer from "../components/GuestbookComposer";
 import GuestbookEntryItem from "../components/GuestbookEntryItem";
 import Lightbox from "../components/Lightbox";
 import { ValueCard } from "./ValuesPage";
+import GalleryVideo from "../components/GalleryVideo";
 
 const socials = {
     github: "https://github.com/xemishra",
@@ -347,7 +348,7 @@ export default function Home() {
                                     <img src={mediaUrl(item.media_url)} alt={item.caption || "Gallery photo"} loading="lazy" />
                                 </button>
                             ) : (
-                                <video src={mediaUrl(item.media_url)} preload="metadata" muted />
+                                <GalleryVideo src={mediaUrl(item.media_url)} />
                             )}
                             {item.caption && (
                                 <figcaption>

@@ -31,6 +31,7 @@ import {
 } from "../api";
 import { LogOut, Pencil, Plus, Trash2 } from "lucide-react";
 import MarkdownEditor from "../components/MarkdownEditor";
+import GalleryVideo from "../components/GalleryVideo";
 
 type Tab = "blogs" | "projects" | "gallery" | "discussions" | "values";
 
@@ -584,7 +585,7 @@ export default function AdminDashboard() {
                                 {g.media_type === "image" ? (
                                     <img src={mediaUrl(g.media_url)} alt={g.caption || "Gallery photo"} />
                                 ) : (
-                                    <video src={mediaUrl(g.media_url)} controls preload="metadata" />
+                                    <GalleryVideo src={mediaUrl(g.media_url)} />
                                 )}
                                 <div className="gallery-admin-meta">
                                     <span>{g.caption || <em className="muted">No caption</em>}</span>
