@@ -64,7 +64,7 @@ export default function ProjectsPage() {
                                     <span key={t}>{t}</span>
                                 ))}
                             </div>
-                            <div className="project-link">
+                            <div className="project-links">
                                 {p.github_url && (
                                     <a href={p.github_url} target="_blank" rel="noreferrer">
                                         source <Github size={13} />
