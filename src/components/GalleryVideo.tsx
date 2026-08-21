@@ -37,6 +37,7 @@ export default function GalleryVideo({ src, className }: GalleryVideoProps) {
             muted
             loop
             playsInline
+            controls
             preload="metadata"
         />
     );
