@@ -302,7 +302,7 @@ export async function addGuestbook(message: string): Promise<GuestbookEntry> {
         await fetch(`${API_URL}/api/guestbook`, {
             method: "POST",
             credentials: "include",
-            headers: { "Content-Type": "appliction/json" },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message }),
         })
     );
