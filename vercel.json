@@ -1,8 +1,16 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ]
+  "rewrites": [
+    {
+      "source": "/robots.txt",
+      "destination": "https://api.xemishra.xyz/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "https://api.xemishra.xyz/sitemap.xml"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
